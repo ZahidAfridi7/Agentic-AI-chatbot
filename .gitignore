@@ -1,0 +1,40 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+.env
+.venv/
+env/
+env.bak/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# VS Code and IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+
+# FastAPI Specific
+instance/
+app/__pycache__/
+app/db/__pycache__/
+app/core/__pycache__/
+app/api/__pycache__/
+app/services/__pycache__/
+app/utils/__pycache__/
+app/__init__.py/
+# Ignore compiled/migrated files
+migrations/
+alembic/versions/*.pyc
+
+# OS-specific files
+.DS_Store
+Thumbs.db
