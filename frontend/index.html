@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afridi Cricket Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Type cursor */
+    .cursor::after { content: ""; display: inline-block; width: 6px; height: 1.1em; background: currentColor; margin-left: 2px; animation: blink 1s steps(2, start) infinite; vertical-align: -2px; }
+    @keyframes blink { to { visibility: hidden; } }
+    /* Hide scrollbar for chat area */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    /* typing dots */
+    .typing span { display: inline-block; width: .35rem; height: .35rem; margin: 0 .15rem; border-radius: 50%; background: currentColor; opacity: .4; animation: bounce 1.2s infinite; }
+    .typing span:nth-child(2) { animation-delay: .15s }
+    .typing span:nth-child(3) { animation-delay: .3s }
+    @keyframes bounce { 0%, 80%, 100% { transform: translateY(0); opacity:.4 } 40% { transform: translateY(-6px); opacity:1 } }
+    /* simple parallax */
+    .parallax { will-change: transform; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 via-slate-100 to-slate-50 text-slate-900">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-white/60 border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-2xl bg-black text-white grid place-items-center shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <div>
+          <h1 class="text-lg font-bold leading-none">Afridi Cricket Academy</h1>
+          <p class="text-xs text-slate-500">Train. Perform. Excel.</p>
+        </div>
+      </div>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="#programs" class="hover:text-black">Programs</a>
+        <a href="#coaches" class="hover:text-black">Coaches</a>
+        <a href="#gallery" class="hover:text-black">Gallery</a>
+        <a href="#contact" class="hover:text-black">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/30"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-24 sm:py-32 text-white">
+      <div class="parallax" id="heroParallax">
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Build Skills with Modern Cricket Coaching</h2>
+        <p class="mt-4 text-slate-200 max-w-2xl">Structured training for all ages — batting, bowling, fielding, fitness, and game awareness with qualified coaches.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#programs" class="px-5 py-3 rounded-xl bg-white text-black font-medium shadow hover:shadow-md">Explore Programs</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-black/50 border border-white/30 font-medium hover:bg-black/60">Join Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold">Programs</h3>
+    <p class="text-slate-600 mt-1">Weekend, Evening, and Elite High-Performance groups.</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h4 class="font-semibold">Junior Foundations</h4>
+        <p class="text-sm text-slate-600 mt-1">Age 8–12 • Basics of stance, grip, and movement.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h4 class="font-semibold">Intermediate Development</h4>
+        <p class="text-sm text-slate-600 mt-1">Age 13–16 • Shot selection, line & length discipline.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h4 class="font-semibold">Elite High-Performance</h4>
+        <p class="text-sm text-slate-600 mt-1">Age 16+ • Strength, analytics, match simulations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHES -->
+  <section id="coaches" class="max-w-6xl mx-auto px-4 pb-4">
+    <div class="rounded-3xl border bg-white/70 backdrop-blur p-6 shadow-sm">
+      <h3 class="text-2xl font-bold">Coaching Team</h3>
+      <p class="text-slate-600 mt-1">Experienced staff focused on technique, discipline, and mindset.</p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="p-4 rounded-2xl border bg-white">
+          <div class="h-40 rounded-xl bg-[url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <h4 class="mt-3 font-semibold">Head Coach</h4>
+          <p class="text-sm text-slate-600">Batting mechanics • Game situations</p>
+        </article>
+        <article class="p-4 rounded-2xl border bg-white">
+          <div class="h-40 rounded-xl bg-[url('https://images.unsplash.com/photo-1619022713291-28d2f1a2d94f?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <h4 class="mt-3 font-semibold">Bowling Coach</h4>
+          <p class="text-sm text-slate-600">Pace & swing • Workloads</p>
+        </article>
+        <article class="p-4 rounded-2xl border bg-white">
+          <div class="h-40 rounded-xl bg-[url('https://images.unsplash.com/photo-1587385789097-0197a7fbd57e?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <h4 class="mt-3 font-semibold">Fielding Coach</h4>
+          <p class="text-sm text-slate-600">Agility • Throws • Reactions</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / CAROUSEL -->
+  <section id="gallery" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="flex items-end justify-between">
+      <h3 class="text-2xl font-bold">Academy Moments</h3>
+      <div class="flex gap-2">
+        <button id="prevSlide" class="px-3 py-2 rounded-xl border bg-white hover:bg-slate-50">Prev</button>
+        <button id="nextSlide" class="px-3 py-2 rounded-xl border bg-white hover:bg-slate-50">Next</button>
+      </div>
+    </div>
+
+    <div class="relative mt-4 overflow-hidden rounded-3xl border bg-white shadow-sm">
+      <div id="slider" class="whitespace-nowrap transition-transform duration-700 ease-out">
+        <!-- slides -->
+        <img class="inline-block w-full h-[320px] object-cover" src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1600&auto=format&fit=crop" alt="Practice nets" />
+        <img class="inline-block w-full h-[320px] object-cover" src="https://images.unsplash.com/photo-1550487228-c1dfc9913382?q=80&w=1600&auto=format&fit=crop" alt="Bowling drills" />
+        <img class="inline-block w-full h-[320px] object-cover" src="https://images.unsplash.com/photo-1518602164578-cd0074062768?q=80&w=1600&auto=format&fit=crop" alt="Fielding practice" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 pb-24">
+    <div class="rounded-3xl border bg-white p-6 shadow-sm grid sm:grid-cols-2 gap-6 items-center">
+      <div>
+        <h3 class="text-2xl font-bold">Ready to level up?</h3>
+        <p class="text-slate-600 mt-1">Message us your age group and goals. We’ll recommend the right program.</p>
+      </div>
+      <div class="text-right">
+        <a href="#" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-black text-white font-medium shadow hover:shadow-md">WhatsApp Us
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHATBOT WIDGET BUTTON -->
+  <button id="chatWidget" class="fixed bottom-5 right-5 z-40 h-14 w-14 rounded-full bg-black text-white shadow-xl grid place-items-center hover:scale-[1.03] active:scale-95 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V5a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+  </button>
+
+  <!-- CHATBOT PANEL -->
+  <div id="chatPanel" class="fixed inset-0 md:inset-auto md:right-5 md:bottom-24 md:top-auto md:w-[380px] z-40 hidden">
+    <!-- Backdrop for mobile -->
+    <div id="backdrop" class="md:hidden absolute inset-0 bg-black/40"></div>
+
+    <div class="absolute inset-x-0 bottom-0 md:inset-auto md:bottom-0 md:right-0 md:top-auto md:w-full max-w-[380px] rounded-t-3xl md:rounded-3xl border bg-white shadow-2xl overflow-hidden">
+      <!-- Panel Header -->
+      <div class="flex items-center justify-between p-3 border-b bg-white/80 backdrop-blur">
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-2xl bg-black text-white grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-semibold leading-none">Academy Chat</div>
+            <div class="text-[11px] text-slate-500">Concise, on-point answers</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="openSettings" class="text-xs px-2 py-1 rounded-lg border bg-white hover:bg-slate-50">Settings</button>
+          <button id="closePanel" class="p-2 rounded-lg hover:bg-slate-100" aria-label="Close">✕</button>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <main id="chat" class="h-[55vh] md:h-[420px] overflow-y-auto no-scrollbar p-3 space-y-3 bg-slate-50/50">
+        <div id="emptyState" class="h-full flex items-center justify-center text-slate-400 select-none">
+          Ask anything about the academy…
+        </div>
+      </main>
+
+      <!-- Input Bar -->
+      <form id="chatForm" class="border-t bg-white p-2 flex items-center gap-2">
+        <input id="userInput" type="text" autocomplete="off" placeholder="Type your message…" required
+               class="flex-1 border rounded-2xl px-3 py-2 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300" />
+        <button id="sendBtn" type="submit" class="px-4 py-2 rounded-2xl bg-black text-white shadow-sm active:opacity-90 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SETTINGS MODAL -->
+  <div id="settings" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+    <div class="w-full max-w-lg rounded-2xl bg-white shadow-lg border">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h2 class="font-semibold">Chat Settings</h2>
+        <button id="closeSettings" class="p-2 rounded-lg hover:bg-slate-50" aria-label="Close settings">✕</button>
+      </div>
+      <div class="p-4 space-y-4">
+        <label class="flex items-center justify-between gap-4">
+          <div>
+            <div class="font-medium">Allow web search</div>
+            <p class="text-xs text-slate-500">Enable Tavily when not covered by your knowledge base.</p>
+          </div>
+          <input id="allowSearch" type="checkbox" class="h-4 w-4" />
+        </label>
+        <div>
+          <label for="datasetId" class="block text-sm text-slate-600 mb-1">Dataset ID</label>
+          <input id="datasetId" type="text" placeholder="e.g. afridi-academy" class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300" />
+          <p class="mt-1 text-xs text-slate-500">If set, answers will use your uploaded dataset first.</p>
+        </div>
+      </div>
+      <div class="p-4 border-t flex justify-end gap-2">
+        <button id="saveSettings" class="px-3 py-2 rounded-xl border bg-white hover:bg-slate-50">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t py-8 text-center text-sm text-slate-500">© <span id="year"></span> Afridi Cricket Academy. All rights reserved.</footer>
+
+  <script>
+    // --- Parallax on hero text ---
+    const heroParallax = document.getElementById('heroParallax');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY * 0.15;
+      heroParallax.style.transform = `translateY(${y}px)`;
+    });
+
+    // --- Carousel ---
+    const slider = document.getElementById('slider');
+    const prevSlide = document.getElementById('prevSlide');
+    const nextSlide = document.getElementById('nextSlide');
+    let index = 0;
+    const total = slider.children.length;
+    function goTo(i){ index = (i + total) % total; slider.style.transform = `translateX(-${index * 100}%)`; }
+    prevSlide.addEventListener('click', () => goTo(index - 1));
+    nextSlide.addEventListener('click', () => goTo(index + 1));
+    setInterval(() => goTo(index + 1), 5000);
+
+    // --- Chat logic (same backend contract) ---
+    const chatWidget = document.getElementById('chatWidget');
+    const chatPanel = document.getElementById('chatPanel');
+    const closePanel = document.getElementById('closePanel');
+    const backdrop = document.getElementById('backdrop');
+
+    const chatEl = document.getElementById('chat');
+    const formEl = document.getElementById('chatForm');
+    const inputEl = document.getElementById('userInput');
+
+    const settings = document.getElementById('settings');
+    const openSettings = document.getElementById('openSettings');
+    const closeSettings = document.getElementById('closeSettings');
+    const saveSettings = document.getElementById('saveSettings');
+    const allowSearchEl = document.getElementById('allowSearch');
+    const datasetIdEl = document.getElementById('datasetId');
+
+    // Persist user choices
+    allowSearchEl.checked = localStorage.getItem('allowSearch') === 'true';
+    datasetIdEl.value = localStorage.getItem('datasetId') || '';
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function openChat(){ chatPanel.classList.remove('hidden'); inputEl.focus(); }
+    function closeChat(){ chatPanel.classList.add('hidden'); }
+
+    chatWidget.addEventListener('click', openChat);
+    closePanel.addEventListener('click', closeChat);
+    backdrop && backdrop.addEventListener('click', closeChat);
+
+    openSettings.addEventListener('click', () => settings.classList.remove('hidden'));
+    closeSettings.addEventListener('click', () => settings.classList.add('hidden'));
+    saveSettings.addEventListener('click', () => { 
+      localStorage.setItem('allowSearch', allowSearchEl.checked);
+      localStorage.setItem('datasetId', datasetIdEl.value);
+      settings.classList.add('hidden');
+    });
+
+    function escapeHTML(str) { return str.replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+    function addMessage(role, html, typing = false) {
+      const row = document.createElement('div');
+      row.className = `flex ${role === 'user' ? 'justify-end' : 'justify-start'}`;
+
+      const bubble = document.createElement('div');
+      bubble.className = `relative max-w-[85%] rounded-2xl px-4 py-3 shadow-sm border ${role === 'user' ? 'bg-black text-white rounded-br-sm' : 'bg-white text-slate-900 rounded-bl-sm'}`;
+      bubble.innerHTML = html || '';
+      if (typing) bubble.classList.add('cursor');
+
+      const wrap = document.createElement('div');
+      wrap.className = `flex items-start gap-3 mb-2 ${role === 'user' ? 'flex-row-reverse' : ''}`;
+      const avatar = document.createElement('div');
+      avatar.className = 'h-7 w-7 rounded-xl bg-slate-900 text-white grid place-items-center shrink-0';
+      avatar.innerHTML = role === 'user' ? '<span class="text-[10px] font-semibold">U</span>' : '<svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>';
+
+      wrap.appendChild(avatar);
+      wrap.appendChild(bubble);
+      row.appendChild(wrap);
+      chatEl.appendChild(row);
+      chatEl.scrollTop = chatEl.scrollHeight;
+      return bubble;
+    }
+
+    function typeWriter(el, text, speed = 14) {
+      return new Promise(resolve => {
+        let i = 0; const chars = Array.from(text);
+        const timer = setInterval(() => {
+          if (i < chars.length) {
+            el.innerHTML += escapeHTML(chars[i]); i++; chatEl.scrollTop = chatEl.scrollHeight;
+          } else { clearInterval(timer); el.classList.remove('cursor'); resolve(); }
+        }, speed);
+      });
+    }
+
+    function showTypingDots(targetBubble) {
+      const dots = document.createElement('div');
+      dots.className = 'typing text-slate-500';
+      dots.innerHTML = '<span></span><span></span><span></span>';
+      targetBubble.appendChild(dots);
+      chatEl.scrollTop = chatEl.scrollHeight;
+      return () => dots.remove();
+    }
+
+    async function sendMessage(message) {
+      addMessage('user', escapeHTML(message));
+      const botBubble = addMessage('assistant', '', true);
+      const removeDots = showTypingDots(botBubble);
+
+      try {
+        const payload = {
+          messages: [message],
+          allow_search: localStorage.getItem('allowSearch') === 'true',
+          dataset_id: localStorage.getItem('datasetId') || null,
+        };
+
+        const res = await fetch('/chat', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+        const text = (res.ok && data && data.response) ? String(data.response) : `Error ${res.status}: ${(data && data.detail) || 'Request failed'}`;
+        removeDots();
+        await typeWriter(botBubble, text);
+      } catch (err) {
+        removeDots(); botBubble.classList.remove('cursor');
+        botBubble.innerHTML = `<span class="text-red-600">Error:</span> ${escapeHTML(err.message || String(err))}`;
+      } finally { chatEl.scrollTop = chatEl.scrollHeight; }
+    }
+
+    document.getElementById('chatForm').addEventListener('submit', (e) => {
+      e.preventDefault(); const msg = (document.getElementById('userInput').value || '').trim(); if (!msg) return;
+      document.getElementById('userInput').value = ''; sendMessage(msg);
+    });
+
+    // Open chat with welcome once
+    let greeted = false;
+    chatWidget.addEventListener('click', () => {
+      if (!greeted) {
+        greeted = true; const welcome = addMessage('assistant', 'Hi! Ask me anything about the academy or your dataset.', true);
+        typeWriter(welcome, 'Hi! Ask me anything about the academy or your dataset.');
+      }
+    });
+  </script>
+</body>
+</html>
